@@ -1,7 +1,48 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        <div class="contain">
-            
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather App</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+
+
+    <div class="card">
+
+        <div class="search">
+            <input type="text" placeholder="enter city name"  id="input" spellcheck="false">
+
+            <button onclick="gtdata()"><img src="download-removebg-preview.png"></button>
         </div>
-    </body>
+        <div class="rro">
+            <p> </p>
+        </div>
+        <div class="weather" style="display: none;">
+            <img src="raincloud.png" class="weather-icon" alt="">
+            <h1 class="temp" id="tmp">22`C</h1>
+            <h2 class="city">United Arab emirates</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="wind.png" alt="">
+                    <div>
+                        <p class="wind">15 km/hr</p>
+                        <p>wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js" ></script>    
+</body>
+
 </html>
